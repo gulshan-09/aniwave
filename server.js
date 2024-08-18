@@ -39,9 +39,9 @@ function verifyRequest(req, res, next) {
   }
 
   // Check if the request is from the allowed host
-  // if (normalizedHost !== ALLOWED_HOST_ANIX && normalizedOriginHost !== ALLOWED_HOST_ANIX && normalizedHost !== ALLOWED_HOST_GOJO && normalizedOriginHost !== ALLOWED_HOST_GOJO && normalizedHost !== ALLOWED_HOST_ZORO && normalizedOriginHost !== ALLOWED_HOST_ZORO && normalizedHost !== ALLOWED_HOST_HURAMOVIES && normalizedOriginHost !== ALLOWED_HOST_HURAMOVIES && normalizedHost !== ALLOWED_HOST_STREAMIXZ && normalizedOriginHost !== ALLOWED_HOST_STREAMIXZ) {
-  //   return res.status(403).json({ message: "You are quite clever but not more than me. You can't access my database.😉😎" });
-  // }
+  if (normalizedHost !== ALLOWED_HOST_ANIX && normalizedOriginHost !== ALLOWED_HOST_ANIX && normalizedHost !== ALLOWED_HOST_GOJO && normalizedOriginHost !== ALLOWED_HOST_GOJO && normalizedHost !== ALLOWED_HOST_ZORO && normalizedOriginHost !== ALLOWED_HOST_ZORO && normalizedHost !== ALLOWED_HOST_HURAMOVIES && normalizedOriginHost !== ALLOWED_HOST_HURAMOVIES && normalizedHost !== ALLOWED_HOST_STREAMIXZ && normalizedOriginHost !== ALLOWED_HOST_STREAMIXZ) {
+    return res.status(403).json({ message: "You are quite clever but not more than me. You can't access my database.😉😎" });
+  }
 
   next();
 }
