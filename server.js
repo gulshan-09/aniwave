@@ -10,7 +10,7 @@ const PORT = process.env.PORT || "5001";
 const API_KEY = process.env.API_KEY;
 const ALLOWED_HOST_GOJO = "gojoo.fun";
 const ALLOWED_HOST_ZORO = "zorox.fun";
-const ALLOWED_HOST_HURAMOVIES = "huramovies.fun";
+const ALLOWED_HOST_HURAMOVIES = "gojo.streamixz.com";
 const ALLOWED_HOST_ANIX = "anixx.fun";
 const ALLOWED_HOST_STREAMIXZ = "streamixz.com";
 
